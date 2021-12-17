@@ -1,0 +1,70 @@
+# Indirect
+# --------
+alabaster==0.7.12
+attrs==21.2.0
+Babel==2.9.1
+certifi==2021.10.8
+charset-normalizer==2.0.9
+colorama==0.4.4
+docutils==0.17.1
+idna==3.3
+imagesize==1.3.0
+importlib-metadata==4.8.2
+Jinja2==3.0.3
+jsonschema==3.2.0
+MarkupSafe==2.0.1
+# sphinxcontrib-openapi depends on m2r which depends on mistune
+# but latest mistune is not compatible with m2r and m2r does not
+# specify a version for mistune
+mistune==0.8.4
+m2r==0.2.1
+markdown-it-py==2.0.0
+mdit-py-plugins==0.3.0
+mdurl==0.1.0
+packaging==21.3
+Pygments==2.10.0
+pyparsing==3.0.6
+pyrsistent==0.18.0
+pytz==2021.3
+requests==2.26.0
+snowballstemmer==2.2.0
+sphinxcontrib-applehelp==1.0.2
+sphinxcontrib-devhelp==1.0.2
+sphinxcontrib-htmlhelp==2.0.0
+sphinxcontrib-httpdomain==1.8.0
+sphinxcontrib-jsmath==1.0.1
+sphinxcontrib-qthelp==1.0.3
+sphinxcontrib-serializinghtml==1.1.5
+urllib3==1.26.7
+typing_extensions==4.0.1
+zipp==3.6.0
+
+# Direct
+# ------
+
+Sphinx==4.3.1
+
+# RTD theme
+sphinx-rtd-theme==1.0.0
+
+# MarkDown support
+myst-parser==0.16.0
+
+# OpenAPI support
+sphinxcontrib-openapi==0.7.0
+
+
+# Application sources
+# -------------------
+
+git+https://bitbucket.org/tietoarkisto/kuha_common@master#egg=kuha_common
+git+https://bitbucket.org/tietoarkisto/kuha_document_store@master#egg=kuha_document_store
+git+https://bitbucket.org/tietoarkisto/kuha_oai_pmh_repo_handler@master#egg=kuha_oai_pmh_repo_handler
+git+https://bitbucket.org/tietoarkisto/kuha_client@master#egg=kuha_client
+
+# Use editable installs since we're using *.rst docs from there repos in documentation
+
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.shared-library@master#egg=cdcagg_common
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.doc-store@main#egg=cdcagg_docstore
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.oai-pmh-repo-handler@main#egg=cdcagg_oai
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.client@main#egg=cdcagg_client
