@@ -64,8 +64,8 @@ git+https://bitbucket.org/tietoarkisto/kuha_client@master#egg=kuha_client
 
 # Use editable installs since we're using *.md docs from these repos in documentation
 
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.shared-library@0.3.0#egg=cdcagg_common
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.shared-library@0.4.0#egg=cdcagg_common
 -e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.doc-store@0.2.0#egg=cdcagg_docstore
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.oai-pmh-repo-handler@0.2.0#egg=cdcagg_oai
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.client@0.3.0#egg=cdcagg_client
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.oai-pmh-repo-handler@0.2.1#egg=cdcagg_oai
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.client@0.4.0#egg=cdcagg_client
 
