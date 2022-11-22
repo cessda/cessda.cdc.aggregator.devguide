@@ -7,6 +7,8 @@ ReadTheDocs compatible documentation for CESSDA Metadata Aggregator (CDC Aggrega
 Development install & serve
 ---------------------------
 
+Developed in Ubuntu 20.04 with Python 3.8.
+
 .. code-block::
 
    pip install -r requirements.txt
