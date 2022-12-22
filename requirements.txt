@@ -66,6 +66,6 @@ git+https://bitbucket.org/tietoarkisto/kuha_client@master#egg=kuha_client
 
 -e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.shared-library@0.5.0#egg=cdcagg_common
 -e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.doc-store@0.3.0#egg=cdcagg_docstore
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.oai-pmh-repo-handler@0.3.0#egg=cdcagg_oai
+-e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.oai-pmh-repo-handler@0.4.0#egg=cdcagg_oai
 -e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.client@0.5.0#egg=cdcagg_client
 
