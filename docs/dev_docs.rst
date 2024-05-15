@@ -1,7 +1,7 @@
 Developer Documentation
 =======================
 
-All components are hosted at Bitbucket. Development follows `CESSDA
+All components are hosted at Github. Development follows `CESSDA
 Technical Guidelines`_.
 
 All commits are tested in CESSDA CI Platform. The platform also
