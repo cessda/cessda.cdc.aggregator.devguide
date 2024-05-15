@@ -57,15 +57,15 @@ sphinxcontrib-openapi==0.7.0
 # Application sources
 # -------------------
 
-git+https://bitbucket.org/tietoarkisto/kuha_common@master#egg=kuha_common
-git+https://bitbucket.org/tietoarkisto/kuha_document_store@master#egg=kuha_document_store
-git+https://bitbucket.org/tietoarkisto/kuha_oai_pmh_repo_handler@master#egg=kuha_oai_pmh_repo_handler
-git+https://bitbucket.org/tietoarkisto/kuha_client@master#egg=kuha_client
+git+https://gitlab.tuni.fi/fsd/kuha_common@master#egg=kuha_common
+git+https://gitlab.tuni.fi/fsd/kuha_document_store@master#egg=kuha_document_store
+git+https://gitlab.tuni.fi/fsd/kuha_oai_pmh_repo_handler@master#egg=kuha_oai_pmh_repo_handler
+git+https://gitlab.tuni.fi/fsd/kuha_client@master#egg=kuha_client
 
 # Use editable installs since we're using *.md docs from these repos in documentation
 
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.shared-library@0.5.0#egg=cdcagg_common
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.doc-store@0.3.0#egg=cdcagg_docstore
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.oai-pmh-repo-handler@0.4.0#egg=cdcagg_oai
--e git+https://bitbucket.org/cessda/cessda.cdc.aggregator.client@0.5.0#egg=cdcagg_client
+-e git+https://github.com/cessda/cessda.cdc.aggregator.shared-library@0.7.0#egg=cdcagg_common
+-e git+https://github.com/cessda/cessda.cdc.aggregator.doc-store@0.5.0#egg=cdcagg_docstore
+-e git+https://github.com/cessda/cessda.cdc.aggregator.oai-pmh-repo-handler@0.8.0#egg=cdcagg_oai
+-e git+https://github.com/cessda/cessda.cdc.aggregator.client@0.8.0#egg=cdcagg_client
 
