@@ -75,7 +75,7 @@ import os
 import shutil
 import filecmp
 from glob import iglob
-from pkg_resources import get_distribution
+from importlib.metadata import metadata
 
 import cdcagg_common
 import cdcagg_docstore
@@ -141,10 +141,14 @@ _copy_docs_here(os.path.abspath(os.path.join(os.path.dirname(cdcagg_client.__fil
                 os.path.join('ext', 'cdcagg_client'))
 
 
-cdcagg_common_version = get_distribution('cdcagg_common').version
-cdcagg_oai_version = get_distribution('cdcagg_oai').version
-cdcagg_docstore_version = get_distribution('cdcagg_docstore').version
-cdcagg_client_version = get_distribution('cdcagg_client').version
+def _get_version(pkg_name):
+    return metadata(pkg_name).get('version')
+
+
+cdcagg_common_version = _get_version('cdcagg_common')
+cdcagg_oai_version = _get_version('cdcagg_oai')
+cdcagg_docstore_version = _get_version('cdcagg_docstore')
+cdcagg_client_version = _get_version('cdcagg_client')
 
 rst_epilog = \
 """.. |cdcagg_common_version| replace:: %s
